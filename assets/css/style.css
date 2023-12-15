@@ -308,6 +308,12 @@ main {
 
 
 
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+ }
 
 
 /*-----------------------------------*\
@@ -316,12 +322,12 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 150px;
   overflow: hidden;
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { max-height: 430px; }
 
 .sidebar-info {
   position: relative;
@@ -347,11 +353,23 @@ main {
 .info-content .title {
   color: var(--white-1);
   background: var(--onyx);
-  font-size: var(--fs-8);
+  font-size: var(--fs-6);
   font-weight: var(--fw-300);
   width: max-content;
-  padding: 3px 12px;
+  padding: 10px;
   border-radius: 8px;
+}
+.info-content .CV{
+  background: var(--bg-gradient-yellow-1);
+  width: 100%;
+  text-align: center;
+  padding: 4px 10px;
+  border: 1px solid var(--jet);
+}
+
+.info-content .CV:hover{
+  background: var(--bg-gradient-yellow-2);
+
 }
 
 .info_more-btn {
@@ -1240,6 +1258,13 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .clients-item { min-width: calc(33.33% - 10px); }
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 15px;
+   }
 
 
 
@@ -1328,12 +1353,13 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #SIDEBAR
    */
 
+  
   .sidebar {
-    max-height: 180px;
+    max-height: 200px;
     margin-bottom: 30px;
   }
 
-  .sidebar.active { max-height: 584px; }
+  .sidebar.active { max-height: 670px; }
 
   .sidebar-info { gap: 25px; }
 
@@ -1559,6 +1585,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
+ 
 
 
   /**
@@ -1770,7 +1797,15 @@ textarea.form-input::-webkit-resizer { display: none; }
    * RESET
    */
 
-  body::-webkit-scrollbar { width: 20px; }
+   .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+   }
+
+   body::-webkit-scrollbar { width: 20px; }
 
   body::-webkit-scrollbar-track { background: var(--smoky-black); }
 

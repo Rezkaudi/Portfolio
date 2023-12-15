@@ -27,12 +27,17 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/me.png" alt="Richard hanrick" width="80">
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Richard hanrick">Rezk Audi</h1>
-          <p class="title">Front-End Developer</p>
+          <div class="flex">
+            <p class="title">Front-End Developer</p>
+            <a href='./assets/CV.pdf' download>
+              <button class="title CV">Download CV</button>
+            </a>
+          </div>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -139,7 +144,7 @@
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Projects</button>
           </li>
           <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
@@ -231,7 +236,7 @@
           - clients
         -->
 
-        <section class="clients">
+        <!-- <section class="clients">
 
           <h3 class="h3 clients-title">Clients</h3>
 
@@ -244,7 +249,7 @@
             </li>
           </ul>
 
-        </section>
+        </section> -->
 
       </article>
 
@@ -404,10 +409,10 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="projects">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">My Projects</h2>
         </header>
 
         <section class="projects">
@@ -541,6 +546,75 @@
               </a>
             </li> -->
 
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://rezkaudi.github.io/Real_Estate">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pro/11.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Real Estate wepsite</h3>
+
+                <!-- <p class="project-category">applications</p> -->
+                <p class="project-category">Full-Stack wepsite with
+                  <br>
+                  ReactJS & Json-server & Api
+                </p>
+
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://rezkaudi.github.io/Calculator">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pro/10.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Calculator</h3>
+
+                <!-- <p class="project-category">applications</p> -->
+                <p class="project-category">Full-Stack App with
+                  <br>
+                  ReactJS & RestApi & Django
+                </p>
+
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://rezkaudi.github.io/seo_dream">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pro/9.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Seo Dream</h3>
+
+                <!-- <p class="project-category">applications</p> -->
+                <p class="project-category">fantastic wepSite with
+                  <br>
+                  Html & Css3 & Js
+                </p>
+
+
+              </a>
+            </li>
+
             <li class="project-item  active" data-filter-item data-category="applications">
               <a href="https://rezkaudi.github.io/To_Do_App">
 
@@ -549,7 +623,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/pro/1.png" alt="summary" loading="lazy">
+                  <img src="./assets/images/pro/8.png" alt="summary" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">To Do App </h3>
@@ -572,7 +646,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/pro/2.png" alt="summary" loading="lazy">
+                  <img src="./assets/images/pro/7.png" alt="summary" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Portfolio wepSite</h3>
@@ -590,7 +664,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/pro/3.png" alt="fundo" loading="lazy">
+                  <img src="./assets/images/pro/6.png" alt="fundo" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Password Generator</h3>
@@ -608,7 +682,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/pro/4.png" alt="fundo" loading="lazy">
+                  <img src="./assets/images/pro/5.png" alt="fundo" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Fish Game</h3>
@@ -617,24 +691,7 @@
 
               </a>
             </li>
-            
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://rezkaudi.github.io/3D_Level">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/pro/5.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">3D Levels</h3>
-
-                <p class="project-category">Simple Project with <br> Html & Css </p>
-
-              </a>
-            </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://rezkaudi.github.io/Python_Kids">
@@ -644,7 +701,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/pro/6.png" alt="summary" loading="lazy">
+                  <img src="./assets/images/pro/4.png" alt="summary" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Learn Programing For Kids</h3>
@@ -662,7 +719,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/pro/7.png" alt="summary" loading="lazy">
+                  <img src="./assets/images/pro/3.png" alt="summary" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Animation On Scroll</h3>
@@ -672,7 +729,7 @@
               </a>
             </li>
 
-             <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://rezkaudi.github.io/Hover_Effect">
 
                 <figure class="project-img">
@@ -680,7 +737,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/pro/8.png" alt="summary" loading="lazy">
+                  <img src="./assets/images/pro/2.png" alt="summary" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Hover Effect</h3>
@@ -698,12 +755,12 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/pro/9.png" alt="summary" loading="lazy">
+                  <img src="./assets/images/pro/1.png" alt="summary" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Hover Effect</h3>
+                <h3 class="project-title">Animation On Click</h3>
 
-                <p class="project-category">Some Hover Effect with <br> Html & Css </p>
+                <p class="project-category">Some Animation On Click with <br> Html & Css </p>
 
               </a>
             </li>
